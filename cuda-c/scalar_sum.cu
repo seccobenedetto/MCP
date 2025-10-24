@@ -4,7 +4,7 @@
 __global__ void sum_kernel(int *x, int *y, int *res){
     // All operands are passed by reference
     //
-    // The operation is executed on the device,
+    // The operation is executed on the device (=GPU),
     // so the variables x, y, res must point to GPU memory
 
     *res = *x + *y;  // Perform addition on the GPU

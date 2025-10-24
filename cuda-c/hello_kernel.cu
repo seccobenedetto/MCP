@@ -17,6 +17,9 @@ int main(int argc, char **argv){
     // Launch the CUDA kernel with a single block and a single thread
     a_kernel<<<1,1>>>();
 
+    // NOTE: this code WILL NOT print hello from GPU, because there isn't the code that fetch the output of the GPU!
+    // see 'hello_kernel_parallel.cu' for the solution
+
     // Return 0 to indicate successful execution
     return 0;
 }
